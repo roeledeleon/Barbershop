@@ -1,3 +1,15 @@
+:root {
+  --WHITE: #ffffff;
+  --ORANGE: #ff6c00;
+  --text-color-primary: #303030;
+  --text-color-secondary: #555;
+  --text-color-title: var(--WHITE);
+  --text-color-highlight: var(--ORANGE);
+  --text-color-accent: #9da4bd;
+  --item-gap-text: 20px;
+  --item-gap-image: 30px;
+}
+
 /* CSS Reset */
 p,
 h1,
@@ -32,19 +44,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* border: 2px solid red; */
-
-  @media screen and (min-width: 428px) {
-    width: 428px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1158px) {
-    width: 1158px;
-  }
+  border: 2px solid red;
 }
 .visually-hidden {
   position: absolute;
@@ -61,10 +61,79 @@ body {
 .section {
   padding-top: 96px;
   padding-bottom: 96px;
-
-  @media screen and (min-width: 1158px) {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
 }
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
 /* END of GENERAL Styles */
+
+/* NAVBAR Styles */
+.header {
+  padding-top: 32px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+
+  width: 1200px;
+  justify-content: space-between;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  margin-right: 130px;
+  background-color: var(--primary-white-color);
+}
+.navbar-list {
+  display: flex;
+}
+.navbar-item {
+  display: flex;
+}
+.navbar-item:not(:first-child) {
+  margin-left: calc(2 * var(--item-gap-text));
+}
+.navigation-item {
+  display: flex;
+  align-items: center;
+}
+.navigation-item:nth-child(2) {
+  justify-content: right;
+}
+.contacts-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.contacts-item:nth-child(2) {
+  margin-left: calc(2 * var(--item-gap-text));
+}
+.button {
+  /* Layout */
+  width: 160px;
+  height: 40px;
+  flex-shrink: 0;
+  /* Style */
+  border-radius: 25px;
+  border: 1px solid #ff6c00;
+  /* Typography*/
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+}
+
+/* End of NAVBAR Styles */

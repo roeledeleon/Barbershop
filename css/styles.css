@@ -1,0 +1,70 @@
+/* CSS Reset */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  /* width: 100% -> the image will take up the full width of its parent container */
+  width: 100%;
+  /* max-width: 100% -> ensures that the image will not exceed its original size */
+  max-width: 100%;
+  height: auto;
+}
+/* END of CSS Reset */
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* GENERAL Styles */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+
+  @media screen and (min-width: 428px) {
+    width: 428px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    width: 1158px;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+  @media screen and (min-width: 1158px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+/* END of GENERAL Styles */

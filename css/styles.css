@@ -41,10 +41,8 @@ body {
 
 /* GENERAL Styles */
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0;
   margin: 0 auto;
-  border: 2px solid red;
 }
 .visually-hidden {
   position: absolute;
@@ -72,19 +70,45 @@ body {
 /* END of GENERAL Styles */
 
 /* NAVBAR Styles */
-.header {
+/*.header {
   padding-top: 32px;
   width: 100%;
   position: absolute;
   top: 0;
-}
-.header-container {
-  display: flex;
-  align-items: center;
+}*/
 
-  width: 1200px;
+.header-container {
+  width: 1280px;
+  height: 705px;
+
+  display: flex;
   justify-content: space-between;
+
+  background-color: white;
 }
+.logo-container {
+  display: block;
+  align-content: left;
+  width: 68.93px;
+  padding-top: 32px;
+  margin-left: 55px;
+}
+.nav-container {
+  display: flex;
+  align-items: flex-start;
+
+  margin: 0;
+
+  padding-right: 55px;
+
+  width: 1125px;
+
+  justify-content: space-between;
+  border: 1px solid orange;
+
+  background-color: gray;
+}
+
 .header-navigation {
   display: flex;
   align-items: center;
@@ -105,9 +129,15 @@ body {
 .navigation-item {
   display: flex;
   align-items: center;
+
+  padding-top: 52px;
+  padding-left: 100px;
 }
 .navigation-item:nth-child(2) {
   justify-content: right;
+}
+.contacts {
+  padding-top: 40px;
 }
 .contacts-item {
   display: flex;
@@ -123,6 +153,8 @@ body {
   width: 160px;
   height: 40px;
   flex-shrink: 0;
+
+  background: rgba(25, 28, 38, 0.2);
   /* Style */
   border-radius: 25px;
   border: 1px solid #ff6c00;
@@ -135,5 +167,42 @@ body {
   letter-spacing: 1.08px;
   text-transform: uppercase;
 }
+.navbar-link,
+.header-address-link {
+  color: #fff;
 
+  font-family: Open Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+.navbar-link:hover,
+.header-address-link:hover {
+  color: orange;
+}
+
+.header-button:hover {
+  background-color: orange;
+}
 /* End of NAVBAR Styles */
+
+/* HERO Styles */
+.hero-container {
+  width: 1280px;
+  display: flex;
+
+  justify-content: flex-end;
+}
+.hero-overlay {
+  width: 1125px;
+  display: flex;
+
+  border: 1px solid orange;
+
+  flex-direction: column;
+  position: relative;
+  top: -712px;
+}
+/* End of HERO Styles */

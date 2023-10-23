@@ -33,6 +33,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+.list {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  border: 0px;
+}
 /* END of CSS Reset */
 
 body {
@@ -41,7 +47,9 @@ body {
 
 /* GENERAL Styles */
 .container {
-  padding: 0;
+  width: 1280px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 .visually-hidden {
@@ -112,7 +120,7 @@ body {
   height: 60px;
   transform: rotate(90deg);
   position: relative;
-  top: -20px;
+  top: -22.5px;
 }
 .section-title-bar.dark {
   background: rgba(157, 164, 189, 0.6);
@@ -193,7 +201,7 @@ body {
   align-content: left;
   width: 68.93px;
   padding-top: 32px;
-  margin-left: 55px;
+  margin-left: 40px;
 }
 .nav-container {
   display: flex;
@@ -284,9 +292,8 @@ body {
   display: flex;
 
   justify-content: flex-end;
-  position: absolute;
-  top: 112px;
-  left: 140px;
+  position: relative;
+  top: -600px;
 }
 .hero-overlay {
   width: 1125px;
@@ -303,7 +310,7 @@ body {
 
 .hero-overlay .section-title {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 50px;
   padding-left: 30px;
   margin-bottom: -20px;
@@ -336,22 +343,28 @@ body {
   padding-top: 130px;
   padding-bottom: 130px;
 }
-.about-container {
-  width: 1280px;
+.about-style {
+  display: flex;
+
+  position: relative;
+  margin-top: -600px;
 }
 .about-contents {
   display: flex;
-  padding-left: 55px;
 }
 .about-item {
   display: flex;
 }
-.about-message {
-  display: flex;
+.about-item:nth-child(1) {
+  margin-left: 40px;
 }
 .about-item:nth-child(2) {
   margin-left: 30px;
   margin-right: 64px;
+}
+
+.about-message {
+  display: flex;
 }
 .about-item.image1 {
   width: 270px;
@@ -368,6 +381,9 @@ body {
   flex-direction: column;
 }
 .about-item-message {
+  display: flex;
+}
+.hero-item-message {
   display: flex;
 }
 .about-item-message:nth-child(1),
@@ -392,15 +408,90 @@ body {
   letter-spacing: 0.28px;
 }
 /* End of ABOUT Styles */
+
 /* SERVICES and PRICES Styles */
-.services-contents {
-  max-width: 1280px;
+.services-layout {
+  /*max-width: 1280px;*/
   margin: 0 auto;
-  height: 718px;
+
   background-image: url(../images/layer_img.png),
     linear-gradient(#111319, #111319);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+.services-contents {
+  display: flex;
+  flex-direction: column;
+  padding-left: 55px;
+}
+.services-item {
+  display: flex;
+}
+.services-item:nth-child(1) {
+  padding-bottom: 40px;
+}
+.services-item:nth-child(2) {
+  padding-bottom: 40px;
+}
+.services-item:nth-child(3) {
+  padding-bottom: 60px;
+}
+.services-item:nth-child(4) {
+  justify-content: center;
+}
+.prices-contents {
+  display: flex;
+}
+.prices-list {
+  padding-top: 28px;
+  padding-left: 38px;
+  padding-right: 42px;
+}
+.prices-list:nth-child(1) {
+  width: 585px;
+  height: 240px;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.prices-list:nth-child(2) {
+  width: 585px;
+  height: 240px;
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+.prices-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+li.prices-item:not(:first-child) {
+  padding-top: 20px;
+}
+.prices-item::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+  flex-grow: 1;
+}
+.prices-item-text {
+  /* typography */
+  color: #9da4bd;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  letter-spacing: 0.36px;
+}
+.prices-item-text:last-child {
+  order: 1;
+}
 /* End of SERVICES and PRICES Styles */
+
+/* WHY US Styles */
+.whyus-layout {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* End of WHY US Styles */

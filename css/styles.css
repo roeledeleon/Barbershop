@@ -3,6 +3,7 @@
   --ORANGE: #ff6c00;
   --text-color-primary: #303030;
   --text-color-secondary: #555;
+  --primary-orange-color: var(--ORANGE);
   --text-color-title: var(--WHITE);
   --text-color-highlight: var(--ORANGE);
   --text-color-accent: #9da4bd;
@@ -489,9 +490,156 @@ li.prices-item:not(:first-child) {
 }
 /* End of SERVICES and PRICES Styles */
 
-/* WHY US Styles */
-.whyus-layout {
+/* OLD SCHOOL Styles */
+.oldschool-contents {
+  display: flex;
+}
+.oldschool-items {
+  display: flex;
+}
+.oldschool-layout {
   max-width: 1280px;
   margin: 0 auto;
 }
-/* End of WHY US Styles */
+.benefits-contents {
+  display: flex;
+
+  padding-left: 155px;
+  gap: 30px;
+  padding-right: 130px;
+}
+.benefits-list:not(:first-child) {
+  margin-top: 35px;
+}
+.benefits-item {
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  background-color: var(--secondary-background-color);
+  box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+
+  /* styles */
+  background: #f7f7f7;
+  margin-bottom: 24px;
+}
+div.benefits-item .benefits-main,
+div.benefits-item .benefits-message {
+  display: flex;
+  justify-content: center;
+}
+.benefits-main {
+  /* layout */
+  width: 80px;
+  /* typography */
+  color: #303030;
+
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+}
+.benefits-main::after {
+  content: "+";
+  font-weight: 600;
+  font-size: 16px;
+  vertical-align: top;
+  color: var(--text-color-highlight);
+}
+.benefits-message {
+  /* layout */
+  width: 122px;
+  /* typography */
+  color: #303030;
+
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.whyus-contents {
+  display: flex;
+  flex-direction: column;
+}
+.whyus-items {
+  display: flex;
+}
+.whyus-item:nth-child(1) {
+  padding-bottom: 40px;
+}
+.whyus-item:nth-child(2) {
+  padding-bottom: 20px;
+}
+/* End of OLD SCHOOL Styles */
+
+/* TEAM Styles*/
+.team-layout {
+  /* layout */
+  margin: 0 auto;
+  height: 890px;
+  /* style */
+  background: #f7f7f7;
+}
+.team-item:not(:first-child) {
+  margin-top: 44px;
+}
+.team-message {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+.team-message-item:not(:first-child) {
+  margin-top: 30px;
+}
+.team-details {
+  display: flex;
+  justify-content: center;
+}
+.details-list {
+  display: flex;
+  width: 370px;
+  flex-direction: column;
+  align-items: center;
+}
+.details-list:not(:first-child) {
+  margin-left: 30px;
+}
+.details-image {
+  display: flex;
+  width: 370px;
+  height: 346px;
+}
+.details-name {
+  color: #303030;
+
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+.details-work {
+  color: --primary-orange-color;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+/* End of TEAM Styles */

@@ -66,10 +66,6 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.section {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
 .list {
   list-style: none;
 }
@@ -92,6 +88,12 @@ body {
   line-height: normal;
   letter-spacing: 1.08px;
   text-transform: uppercase;
+
+  cursor: pointer;
+}
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 .section-title {
   display: flex;
@@ -314,9 +316,9 @@ a.section-title-text.white {
   flex-direction: column;
   position: relative;
 
+  padding-left: 100px;
   padding-bottom: 206px;
 }
-
 .hero-overlay .section-title {
   display: flex;
   align-items: flex-start;
@@ -345,13 +347,64 @@ a.section-title-text.white {
   line-height: 30px; /* 166.667% */
   letter-spacing: 0.36px;
 }
-
 /* End of HERO Styles */
-/* ABOUT Styles */
-.section {
-  padding-top: 130px;
-  padding-bottom: 130px;
+
+/* SIDEBAR Styles*/
+.nav-socials {
+  display: flex;
+  width: 400px;
+  position: absolute;
+  top: 370px;
+  left: -90px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  rotate: -90deg;
 }
+.nav-socials-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 40px;
+}
+.nav-socials-layout {
+  margin-left: 40px;
+}
+.nav-socials-text {
+  color: #303030;
+
+  font-family: Open Sans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+}
+.nav-socials-item {
+  display: flex;
+}
+.nav-socials-item:nth-child(2) {
+  margin-left: 35px;
+}
+.nav-section-title-bar {
+  background: #303030;
+  /*layout*/
+  width: 1px;
+  height: 60px;
+  transform: rotate(90deg);
+  position: relative;
+  top: -22.5px;
+  margin-left: 30px;
+}
+.nav-socials-item:hover .nav-socials-text {
+  color: var(--ORANGE);
+}
+/* End of SIDEBAR Styles */
+
+/* ABOUT Styles */
 .about-style {
   display: flex;
 
@@ -542,6 +595,38 @@ div.benefits-item .benefits-main,
 div.benefits-item .benefits-message {
   display: flex;
   justify-content: center;
+}
+.benefits-item.first:hover {
+  margin-top: 6px;
+  margin-left: 6px;
+  margin-right: -6px;
+  margin-bottom: 18px;
+
+  box-shadow: 5px 5px 4px 1px rgba(0, 0, 0, 0.3);
+}
+.benefits-item.second:hover {
+  margin-top: 6px;
+  margin-left: 6px;
+  margin-right: -6px;
+  margin-bottom: 18px;
+
+  box-shadow: 5px 5px 4px 1px rgba(0, 0, 0, 0.3);
+}
+.benefits-item.third:hover {
+  margin-top: 6px;
+  margin-left: 6px;
+  margin-right: -6px;
+  margin-bottom: 18px;
+
+  box-shadow: 5px 5px 4px 1px rgba(0, 0, 0, 0.3);
+}
+.benefits-item.fourth:hover {
+  margin-top: 6px;
+  margin-left: 6px;
+  margin-right: -6px;
+  margin-bottom: 24px;
+
+  box-shadow: 5px 5px 4px 1px rgba(0, 0, 0, 0.3);
 }
 .benefits-main {
   /* layout */
@@ -750,7 +835,6 @@ div.bnc-item {
   width: 50%;
 }
 div.bnc-item.image {
-  margin: 0 auto;
   background-image: url(../images/barbershop.jpeg),
     linear-gradient(#111319, #111319);
   background-repeat: no-repeat;
@@ -763,6 +847,7 @@ div.bnc-item.image {
 .booking-contents {
   display: flex;
   padding-left: 100px;
+  flex-direction: column;
 }
 .contents-list {
   margin-top: 40px;
@@ -827,3 +912,51 @@ div.bnc-item.image {
   margin-top: 20px;
 }
 /* End of Booking Styles */
+
+/* FOOTER Styles */
+.footer-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #f7f7f7;
+}
+.footer-wrap {
+  display: flex;
+  width: 640px;
+
+  padding-left: 55px;
+  padding-right: 55px;
+}
+.footer-wrap.right {
+  justify-content: right;
+}
+.footer-section {
+  padding-top: 130px;
+  padding-bottom: 85px;
+}
+.footer-text {
+  color: #9da4bd;
+
+  font-family: Open Sans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+}
+.footer-list {
+  display: flex;
+}
+.footer-item:nth-child(1) {
+  margin-left: 30px;
+}
+.footer-item:nth-child(2) {
+  margin-left: 55px;
+}
+.footer-item:nth-child(3) {
+  margin-left: 10px;
+}
+.footer-item:hover .footer-text {
+  color: var(--ORANGE);
+}
+/* End of FOOTER Styles */

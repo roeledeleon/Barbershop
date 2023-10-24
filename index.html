@@ -198,7 +198,6 @@
     <!-- HEADER -->
     <header>
       <!-- NAVBAR -->
-
       <div class="header-container container">
         <div class="logo-container">
           <a class="header-logo" href="./index.html">
@@ -210,12 +209,10 @@
             <nav class="header-navigation">
               <ul class="navbar-list list">
                 <li class="navbar-item">
-                  <a class="navbar-link current link" href="./index.html"
-                    >About</a
-                  >
+                  <a class="navbar-link current link" href="#about">About</a>
                 </li>
                 <li class="navbar-item">
-                  <a class="navbar-link link" href="./portfolio.html"
+                  <a class="navbar-link link" href="#services"
                     >Services and Prices</a
                   >
                 </li>
@@ -248,7 +245,6 @@
       </div>
     </header>
     <main>
-      <!-- SIDEBAR -->
       <!-- HERO Section -->
       <div class="hero-container container">
         <div class="hero-overlay">
@@ -265,9 +261,38 @@
             >
           </div>
         </div>
+        <!-- SIDEBAR -->
+        <div class="nav-socials-container">
+          <div class="nav-socials">
+            <ul class="nav-socials-list list">
+              <li class="nav-socials-item">
+                <div class="nav-section-title-bar lite"></div>
+              </li>
+              <li class="nav-socials-item">
+                <a
+                  class="nav-socials-text .nav-socials-layout link"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="nav-socials-item">
+                <a
+                  class="nav-socials-text .nav-socials-layout link"
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+
       <!-- ABOUT Section -->
-      <div class="about-style section">
+      <div id="about" class="about-style section">
         <div class="about-contents container">
           <div class="about-item image1 img"></div>
           <div class="about-item image2 img"></div>
@@ -307,7 +332,7 @@
         </div>
       </div>
       <!-- SERVICES and PRICES Section -->
-      <div class="services-layout section">
+      <div id="services" class="services-layout section">
         <div class="services-contents container">
           <div class="services-item section-title">
             <div class="section-title-bar dark"></div>
@@ -372,21 +397,21 @@
         <div class="oldschool-contents container">
           <div class="oldschool-items benefits-contents">
             <ul class="benefits-list list">
-              <li class="benefits-item">
+              <li class="benefits-item first">
                 <a class="text benefits-main">600</a>
                 <a class="text benefits-message">Satisfied Customers per Day</a>
               </li>
-              <li class="benefits-item">
+              <li class="benefits-item second">
                 <a class="text benefits-main">20</a>
                 <a class="text benefits-message">The Best Barbers of Kyiv</a>
               </li>
             </ul>
             <ul class="benefits-list list">
-              <li class="benefits-item">
+              <li class="benefits-item third">
                 <a class="text benefits-main">50</a>
                 <a class="text benefits-message">Excellent Service Awards</a>
               </li>
-              <li class="benefits-item">
+              <li class="benefits-item fourth">
                 <a class="text benefits-main">100</a>
                 <a class="text benefits-message">Gifts for Regular Customers</a>
               </li>
@@ -410,7 +435,7 @@
         </div>
       </div>
       <!-- TEAM Section -->
-      <div class="team-layout section">
+      <div id="barbers" class="team-layout section">
         <div class="team-contents container">
           <div class="team-item team-message">
             <div class="team-message-item section-title">
@@ -694,12 +719,17 @@
         </div>
       </div>
       <!-- BOOKING & CONTACTS Section -->
-      <div class="bnc-layout">
+      <div id="contacts" class="bnc-layout">
         <div class="bnc-item simple">
           <div class="booking-layout section">
             <div class="booking-contents">
               <div class="booking-item main-title">
                 <a class="main-title-text dark">Book a Service</a>
+              </div>
+              <div class="booking-item">
+                <button class="booking-send button-dark button" type="button">
+                  SEND
+                </button>
               </div>
             </div>
           </div>
@@ -758,9 +788,49 @@
           </div>
         </div>
       </div>
-      <!-- TEST Section -->
-      <div class="test-layout section"></div>
     </main>
     <!-- FOOTER Section -->
+    <footer>
+      <div class="footer-layout">
+        <div class="footer-wrap left">
+          <div class="footer-left footer-section">
+            <div class="footer-contents">
+              <div class="footer-copyright">
+                <p class="footer-text">© Copyright 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-wrap right">
+          <div class="footer-right footer-section">
+            <div class="footer-socials">
+              <ul class="footer-list list">
+                <li class="footer-item">
+                  <div class="section-title-bar lite"></div>
+                </li>
+                <li class="footer-item">
+                  <a
+                    class="footer-text section-title link"
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a
+                    class="footer-text section-title link"
+                    href="https://youtube.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Youtube</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

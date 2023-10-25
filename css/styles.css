@@ -199,13 +199,13 @@ a.section-title-text.white {
 /* NAVBAR Styles */
 .header-container {
   width: 1280px;
-  height: 705px;
-
+  /*height: 705px;*/
   display: flex;
-  justify-content: space-between;
-
   background-color: white;
+  left: 170px;
   position: relative;
+  top: 0px;
+  left: 0px;
 }
 .logo-container {
   display: block;
@@ -218,12 +218,14 @@ a.section-title-text.white {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-
   margin: 0;
   padding-right: 55px;
   width: 1125px;
 
-  background-color: gray;
+  /* background-color: gray; */
+
+  position: absolute;
+  left: 155px;
 }
 
 .header-navigation {
@@ -295,27 +297,33 @@ a.section-title-text.white {
 .button-light:hover {
   color: #fff;
 }
+
+.slider-container {
+  position: absolute;
+  width: 1125px;
+  left: 155px;
+
+  padding-right: 15px;
+}
 /* End of NAVBAR Styles */
 
 /* HERO Styles */
 .hero-container {
-  width: 1280px;
   display: flex;
-
   justify-content: flex-end;
   position: relative;
-  top: -600px;
+
+  width: 1280px;
+  /*height: 643px;*/
+  /* top: -600px;*/
 }
 .hero-overlay {
   width: 1125px;
-  height: 592px;
-
+  height: 530px;
   display: flex;
   justify-content: flex-end;
-
   flex-direction: column;
-  position: relative;
-
+  /* position: relative; */
   padding-left: 100px;
   padding-bottom: 206px;
 }
@@ -354,7 +362,7 @@ a.section-title-text.white {
   display: flex;
   width: 400px;
   position: absolute;
-  top: 370px;
+  bottom: 175px;
   left: -90px;
   flex-direction: column;
   justify-content: flex-end;
@@ -409,7 +417,7 @@ a.section-title-text.white {
   display: flex;
 
   position: relative;
-  margin-top: -600px;
+  /*margin-top: -600px;*/
 }
 .about-contents {
   display: flex;
@@ -835,8 +843,8 @@ div.bnc-item {
   width: 50%;
 }
 div.bnc-item.image {
-  background-image: url(../images/barbershop.jpeg),
-    linear-gradient(#111319, #111319);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/barbershop.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

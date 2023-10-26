@@ -258,14 +258,23 @@ a.section-title-text.white {
 .contacts {
   padding-top: 40px;
 }
-.contacts-item {
+.header-list {
+  display: flex;
+}
+.header-item {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
 }
-.contacts-item:nth-child(2) {
+.header-item:nth-child(2) {
   margin-left: calc(2 * var(--item-gap-text));
+}
+.header-booking {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .navbar-link,
 .header-address-link {
@@ -282,7 +291,7 @@ a.section-title-text.white {
 .header-address-link:hover {
   color: orange;
 }
-.button-light {
+.button-lite {
   color: #303030;
 }
 .button-dark {
@@ -294,7 +303,7 @@ a.section-title-text.white {
 .button-dark:hover {
   color: #fff;
 }
-.button-light:hover {
+.button-lite:hover {
   color: #fff;
 }
 
@@ -304,6 +313,15 @@ a.section-title-text.white {
   left: 155px;
 
   padding-right: 15px;
+}
+.slider-image {
+  width: 1125px;
+  height: 680px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/Slider\ Image\ 1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /* End of NAVBAR Styles */
 
@@ -319,7 +337,7 @@ a.section-title-text.white {
 }
 .hero-overlay {
   width: 1125px;
-  height: 530px;
+  height: 575px;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -939,8 +957,8 @@ div.bnc-item.image {
   justify-content: right;
 }
 .footer-section {
-  padding-top: 130px;
-  padding-bottom: 85px;
+  padding-top: 56px;
+  padding-bottom: 11px;
 }
 .footer-text {
   color: #9da4bd;
@@ -968,3 +986,35 @@ div.bnc-item.image {
   color: var(--ORANGE);
 }
 /* End of FOOTER Styles */
+
+/* SCROLL TOP Styles */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  border: none;
+  outline: none;
+
+  background-color: var(--ORANGE);
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  opacity: 0.5;
+
+  /* typography */
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+/* End of SCROLL TOP Styles */

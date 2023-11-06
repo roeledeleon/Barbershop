@@ -16,6 +16,11 @@
     />
     <!-- Styles CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Animate on Scroll -->
+    <link rel="stylesheet" href="./css/aos.css" />
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
     <!-- SVG -->
@@ -306,7 +311,7 @@
         </div>
       </div>
       <!-- ABOUT Section -->
-      <div id="about" class="about-style section">
+      <div id="about" class="about-style section" data-aos="flip-up">
         <div class="about-contents container">
           <div class="about-item image1 img"></div>
           <div class="about-item image2 img"></div>
@@ -315,7 +320,7 @@
               <div class="section-title-bar lite"></div>
               <a class="section-title-text lite">About</a>
             </div>
-            <div class="about-item-message main-title">
+            <div class="about-item-message main-title" data-aos="flip-down">
               <a class="main-title-text lite"
                 >The Best Barbershop in Your City</a
               >
@@ -344,7 +349,7 @@
         </div>
       </div>
       <!-- SERVICES and PRICES Section -->
-      <div id="services" class="services-layout section">
+      <div id="services" class="services-layout section" data-aos="flip-up">
         <div class="services-contents container">
           <div class="services-item section-title">
             <div class="section-title-bar dark"></div>
@@ -352,7 +357,7 @@
               >Spend time in the company of the best craftsmen</a
             >
           </div>
-          <div class="services-item main-title">
+          <div class="services-item main-title" data-aos="fade-up">
             <a class="main-title-text dark">Services and Prices</a>
           </div>
           <div class="services-item prices-contents">
@@ -403,25 +408,25 @@
         </div>
       </div>
       <!-- OLD SCHOOL Section -->
-      <div class="oldschool-layout section">
+      <div class="oldschool-layout section" data-aos="flip-up">
         <div class="oldschool-contents container">
           <div class="oldschool-items benefits-contents">
             <ul class="benefits-list list">
-              <li class="benefits-item first">
+              <li class="benefits-item first" data-aos="fade-right">
                 <a class="text benefits-main">600</a>
                 <a class="text benefits-message">Satisfied Customers per Day</a>
               </li>
-              <li class="benefits-item second">
+              <li class="benefits-item second" data-aos="fade-up">
                 <a class="text benefits-main">20</a>
                 <a class="text benefits-message">The Best Barbers of Kyiv</a>
               </li>
             </ul>
             <ul class="benefits-list list">
-              <li class="benefits-item third">
+              <li class="benefits-item third" data-aos="fade-down">
                 <a class="text benefits-main">50</a>
                 <a class="text benefits-message">Excellent Service Awards</a>
               </li>
-              <li class="benefits-item fourth">
+              <li class="benefits-item fourth" data-aos="fade-left">
                 <a class="text benefits-main">100</a>
                 <a class="text benefits-message">Gifts for Regular Customers</a>
               </li>
@@ -432,7 +437,7 @@
               <div class="section-title-bar lite"></div>
               <a class="section-title-text lite">Old School</a>
             </div>
-            <div class="whyus-item main-title">
+            <div class="whyus-item main-title" data-aos="fade-in">
               <a class="main-title-text lite">Why do they come to us?</a>
             </div>
             <div class="whyus-item message-title">
@@ -445,7 +450,7 @@
         </div>
       </div>
       <!-- TEAM Section -->
-      <div id="barbers" class="team-layout section">
+      <div id="barbers" class="team-layout section" data-aos="flip-up">
         <div class="team-contents container">
           <div class="team-item team-message">
             <div class="team-message-item section-title">
@@ -454,7 +459,7 @@
                 >For true Connoisseurs of the atmosphere</a
               >
             </div>
-            <div class="team-message-item main-title">
+            <div class="team-message-item main-title" data-aos="fade-left">
               <a class="main-title-text lite">Our Barbers</a>
             </div>
           </div>
@@ -682,7 +687,7 @@
         </div>
       </div>
       <!-- PORTFOLIO Section -->
-      <div class="portfolio-layout section">
+      <div class="portfolio-layout section" data-aos="flip-up">
         <div class="portfolio-contents container">
           <div class="portfolio-item section-title">
             <div class="section-title">
@@ -729,7 +734,7 @@
         </div>
       </div>
       <!-- BOOKING & CONTACTS Section -->
-      <div id="book-a-service" class="bnc-layout">
+      <div id="book-a-service" class="bnc-layout" data-aos="flip-up">
         <div class="bnc-item simple">
           <div class="booking-layout section">
             <div class="booking-contents">
@@ -843,7 +848,7 @@
           <div class="footer-left footer-section">
             <div class="footer-contents">
               <div class="footer-copyright">
-                <p class="footer-text">© Copyright 2022</p>
+                <p class="footer-text">© Copyright 2023</p>
               </div>
             </div>
           </div>
@@ -904,6 +909,12 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
+    </script>
+    <script src="./js/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-in-out-sine",
+      });
     </script>
   </body>
 </html>
